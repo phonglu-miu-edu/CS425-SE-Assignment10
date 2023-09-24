@@ -7,16 +7,16 @@ import org.junit.runner.Runner;
 
 public class ArrayFlattenerTest {
     @Test
-    public void flattenArrayTest1() {
+    public void flatternArrayTest1() {
         ArrayFlattener arrayFlattener = new ArrayFlattener();
         int[][] input = {{1, 3}, {0}, {4, 5, 9}};
         int[] exectedResults = {1, 3, 0, 4, 5, 9};
-        Assert.assertArrayEquals(exectedResults, arrayFlattener.flattenArray(input));
+        Assert.assertArrayEquals(exectedResults, arrayFlattener.flatternArray(input));
     }
 
     @Test
-    public void flattenArrayTest2() {
+    public void flatternArrayTest2() {
         ArrayFlattener arrayFlattener = new ArrayFlattener();
-        Assert.assertArrayEquals(null, arrayFlattener.flattenArray(null));
+        Assert.assertArrayEquals(null, arrayFlattener.flatternArray(null));
     }
 }
